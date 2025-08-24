@@ -38,7 +38,7 @@
     }
 
     .card {
-      background: rgba(0,0,0,0.4);       /* 読みやすさのための半透明背景 */
+      background: rgba(0,0,0,0.4);
       border: 1px solid rgba(255,255,255,0.15);
       border-radius: 6px;
       overflow: hidden;
@@ -46,4 +46,102 @@
     }
 
     .thumb {
-      display: b
+      display: block;
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      background: #222;
+    }
+
+    .meta {
+      padding: 12px 14px 14px;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .title {
+      font-weight: 700;
+      font-size: 15px;
+      margin: 0 0 6px;
+    }
+
+    .row {
+      margin: 2px 0;
+      opacity: .95;
+    }
+
+    .label {
+      opacity: .8;
+      margin-right: 6px;
+    }
+
+    a {
+      color: #fff;
+      text-decoration: underline;
+      word-break: break-all;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      margin-bottom: 14px;
+      font-size: 14px;
+      opacity: .9;
+    }
+    .nav a { text-decoration: none; border-bottom: 1px solid rgba(255,255,255,.4); }
+    .nav a:hover { border-bottom-color: #fff; }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <span>／</span>
+      <strong>Discography</strong>
+    </nav>
+
+    <h1>Discography</h1>
+
+    <section class="grid">
+
+      <article class="card">
+        <img class="thumb" src="images/logoutright.jpg" alt="right ジャケット画像">
+        <div class="meta">
+          <h2 class="title">log out/right</h2>
+          <div class="row"><span class="label">Release Date:</span>2025-04-26</div>
+          <div class="row"><span class="label">Label:</span>Self-released</div>
+          <div class="row"><span class="label">Link:</span>
+            <a href="https://soundcloud.com/package_emoji/right" target="_blank" rel="noopener">SoundCloud</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <img class="thumb" src="images/lichen.jpg" alt="Lichen ジャケット画像">
+        <div class="meta">
+          <h2 class="title">Lichen</h2>
+          <div class="row"><span class="label">Release Date:</span>2025-03-01</div>
+          <div class="row"><span class="label">Label:</span>Emoticons.</div>
+          <div class="row"><span class="label">Link:</span>
+            <a href="https://packageemoji.bandcamp.com/album/lichen" target="_blank" rel="noopener">Bandcamp</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <img class="thumb" src="images/down.jpg" alt="Down ジャケット画像">
+        <div class="meta">
+          <h2 class="title">Down - EP</h2>
+          <div class="row"><span class="label">Release Date:</span>2023-12-20</div>
+          <div class="row"><span class="label">Label:</span>Self-released</div>
+          <div class="row"><span class="label">Link:</span>
+            <a href="https://packageemoji.bandcamp.com/album/down" target="_blank" rel="noopener">Link Text</a>
+          </div>
+        </div>
+      </article>
+
+    </section>
+  </main>
+</body>
+</html>
