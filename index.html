@@ -5,26 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>package_emoji</title>
   <style>
+    /* 余白を消す＆高さを画面に合わせる */
+    html, body { height: 100%; margin: 0; }
+
+    /* モバイルのアドレスバー対策で svh を使うとより確実 */
     body {
-      /* 背景画像を指定 */
+      min-height: 100svh;                /* 画面ちょうどの高さ */
       background-image: url('background.jpg');
-      /* 背景画像の表示方法 */
-      background-size: cover;       /* 全画面にフィット */
-      background-repeat: no-repeat; /* 画像の繰り返しを防止 */
-      background-position: center;  /* 中央に配置 */
-      margin: 0;
-      padding: 20px;
-      color: #fff; /* 背景に合わせて文字を白に */
+      background-size: cover;             /* 画面にフィット（はみ出しトリミングあり）*/
+      background-repeat: no-repeat;
+      background-position: center;
+      display: grid;                      /* 中央寄せ用（任意）*/
+      place-items: center;                /* 中央寄せ（任意）*/
+      color: #fff;
     }
+
+    .wrap { text-align: center; }
+    h1 { margin: 0 0 16px; }
+    p { margin: 4px 0; }
   </style>
 </head>
 <body>
-  <h1>package_emoji</h1>
-  <p>insta: @package_emoji</p>
-  <p>X(Twitter) : @package_emoji</p>
-  <p>bandcamp : package_emoji</p>
-  <p>Inquiries:contact me via Instagram DM.</p>
-  
+  <div class="wrap">
+    <h1>package_emoji</h1>
+    <p>insta: @package_emoji</p>
+    <p>X(Twitter) : @package_emoji</p>
+    <p>bandcamp : package_emoji</p>
+　  <p>Inquiries:contact me via Instagram DM.</p>
+  </div>
 </body>
 </html>
-
