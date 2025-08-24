@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Release</title>
+  <style>
+    /* index.html と同じ背景設定 */
+    html, body { height: 100%; margin: 0; }
+    body {
+      min-height: 100svh;                /* 画面ちょうどの高さ */
+      background-image: url('background.jpg');
+      background-size: cover;             /* 画面にフィット（はみ出しトリミングあり）*/
+      background-repeat: no-repeat;
+      background-position: center;
+      color: #fff;
+      display: grid;
+      place-items: start center;          /* 上から中央寄せ */
+    }
+
+    /* ページ内レイアウト */
+    .page {
+      width: min(1100px, 92vw);
+      padding: 28px 20px 60px;
+    }
+
+    h1 {
+      margin: 0 0 20px;
+      font-size: 28px;
+      letter-spacing: .04em;
+      text-align: center;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 16px;
+    }
+
+    .card {
+      background: rgba(0,0,0,0.4);       /* 読みやすさのための半透明背景 */
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 14px;
+      overflow: hidden;
+      backdrop-filter: blur(2px);
+    }
+
+    .thumb {
+      display: block;
+      width: 100%;
+      aspect-ratio: 1 / 1;               /* ジャケットを正方形に */
+      object-fit: cover;
+      background: #222;
+    }
+
+    .meta {
+      padding: 12px 14px 14px;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .title {
+      font-weight: 700;
+      font-size: 15px;
+      margin: 0 0 6px;
+    }
+
+    .row {
+      margin: 2px 0;
+      opacity: .95;
+    }
+
+    .label {
+      opacity: .8;
+      margin-right: 6px;
+    }
+
+    a {
+      color: #fff;
+      text-decoration: underline;
+      word-break: break-all;
+    }
+
+    /* 上部ナビ（任意） */
+    .nav {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      margin-bottom: 14px;
+      font-size: 14px;
+      opacity: .9;
+    }
+    .nav a { text-decoration: none; border-bottom: 1px solid rgba(255,255,255,.4); }
+    .nav a:hover { border-bottom-color: #fff; }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <span>／</span>
+      <strong>Release</strong>
+    </nav>
+
+    <h1>Release</h1>
+
+    <!-- ここにカードを複製して追加していってください -->
+    <section class="grid">
+
+
+      <!-- リリース #2（サンプル） -->
+      <article class="card">
+        <img class="thumb" src="images/right.jpg" alt="right ジャケット画像">
+        <div class="meta">
+          <h2 class="title">right</h2>
+          <div class="row"><span class="label">リリース日:</span>2025-04-26</div>
+          <div class="row"><span class="label">レーベル:</span>Self-released</div>
+          <div class="row"><span class="label">リンク:</span>
+            <a href="https://soundcloud.com/package_emoji/right" target="_blank" rel="noopener">SoundCloud</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- リリース #1（サンプル） -->
+      <article class="card">
+        <img class="thumb" src="images/lichen.jpg" alt="Lichen ジャケット画像">
+        <div class="meta">
+          <h2 class="title">Lichen</h2>
+          <div class="row"><span class="label">リリース日:</span>2025-03-01</div>
+          <div class="row"><span class="label">レーベル:</span>Emoticons.</div>
+          <div class="row"><span class="label">リンク:</span>
+            <a href="https://packageemoji.bandcamp.com/album/lichen" target="_blank" rel="noopener">Bandcamp</a>
+          </div>
+        </div>
+      </article>
+
+
+      <!-- リリース #3（テンプレート） -->
+      <article class="card">
+        <img class="thumb" src="images/your-cover.jpg" alt="タイトルのジャケット画像">
+        <div class="meta">
+          <h2 class="title">タイトルを入れてください</h2>
+          <div class="row"><span class="label">リリース日:</span>YYYY-MM-DD</div>
+          <div class="row"><span class="label">レーベル:</span>Label Name</div>
+          <div class="row"><span class="label">リンク:</span>
+            <a href="https://example.com" target="_blank" rel="noopener">Link Text</a>
+          </div>
+        </div>
+      </article>
+
+    </section>
+  </main>
+</body>
+</html>
