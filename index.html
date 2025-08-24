@@ -5,34 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>package_emoji</title>
   <style>
-    /* 余白を消す＆高さを画面に合わせる */
     html, body { height: 100%; margin: 0; }
-
-    /* モバイルのアドレスバー対策で svh を使うとより確実 */
     body {
-      min-height: 100svh;                /* 画面ちょうどの高さ */
+      min-height: 100svh;
       background-image: url('background.jpg');
-      background-size: cover;             /* 画面にフィット（はみ出しトリミングあり）*/
+      background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
-      display: grid;                      /* 中央寄せ用（任意）*/
-      place-items: center;                /* 中央寄せ（任意）*/
+      display: grid;
+      place-items: center;
       color: #fff;
     }
-
     .wrap { text-align: center; }
     h1 { margin: 0 0 16px; }
     p { margin: 4px 0; }
+    a { color: #fff; text-decoration: underline; } /* リンクの見た目（必要に応じて調整） */
   </style>
 </head>
 <body>
   <div class="wrap">
     <h1>package_emoji</h1>
-    <p>insta:@package_emoji</p>
-    <p>X(Twitter):@package_emoji</p>
-    <p>bandcamp:package_emoji</p>
-　  <p>Inquiries:Contact me via Instagram DM.</p>
+    <p>insta: <a href="https://www.instagram.com/package_emoji/" target="_blank">@package_emoji</a></p>
+    <p>X(Twitter): <a href="https://x.com/package_emoji" target="_blank">@package_emoji</a></p>
+    <p>bandcamp: <a href="https://packageemoji.bandcamp.com/music" target="_blank">package_emoji</a></p>
+    <p>Inquiries: Contact me via Instagram DM.</p>
   </div>
 </body>
 </html>
-
